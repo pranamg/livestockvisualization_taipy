@@ -1,0 +1,36 @@
+{
+  "layout": {
+    "type": "vertical",
+    "children": [
+      {
+        "type": "text",
+        "content": "Live Stock Visualization for TSLA"
+      },
+      {
+        "type": "chart",
+        "data": {
+          "type": "line",
+          "source": "live_stock_data"
+        },
+        "options": {
+          "title": {
+            "display": true,
+            "text": "TSLA Stock Price"
+          },
+          "scales": {
+            "x": {
+              "type": "time",
+              "time": {
+                "unit": "minute"
+              }
+            },
+            "y": {
+              "type": "linear",
+              "beginAtZero": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}
